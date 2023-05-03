@@ -1,0 +1,59 @@
+#
+# BOT
+#
+
+token: "" # Set your bot token
+ownerID: "" # Set your discord ID
+prefix: "!" # Set prefix for normal commands Example: "!"
+guildID: "" # Set guild ID for tickets
+
+status:
+  status: "online" # Set bot status Example: "online, "idle", "dnd"
+  activity: "WATCHING" # Set bot activity Example: "PLAYING", "LISTENING", "WATCHING"
+  messages: ["old project", "dsc.gg/faithcommunity"] # Set the status messages Example: ["mensaje 1", "mensaje 2", "mensaje 3"]
+
+embeds:
+  mainColor: "#0f869c"
+  errorColor: "RED"
+  waitingColor: "YELLOW"
+  successColor: "GREEN"
+  footer: "By Expectatives#1157" # Set footer for embeds
+
+#
+# PERMISSIONS
+#
+
+permissions:
+  Staff: # Set roles ID that can use staff commands (/add, /remove)
+    - "948055198797017149"
+    - "944634874483081347"
+    - "951921543976452138"
+  Admin: # Set roles ID that can user admin commands (/send-panel)
+    - "942462052855869571"
+    - "942463584095596554"
+    - "942461420853932084"
+
+#
+# TICKETS
+#
+
+channels:
+  logs: "951922875491815494" # Set chennel ID for send ticket logs
+  transcripts: "951923007926976562" # Set channel ID for send ticket transcript
+
+mainCategory:
+  categoryID: "942461429339013221" # Set category ID where the ticket is to be created before the user selects the ticket type
+  rolesID: ["948055198797017149", "944634874483081347", "951921543976452138"] # Set roles ID that can view the ticket before the user selects the ticket type
+
+# TICKETS CATEGORIES
+generalCategory:
+  categoryID: "951922457588158515" # Set category ID where the ticket will be moved when selecting the General Support type
+  rolesID: ["948055198797017149"] # Set roles ID that can view the ticket General Support
+
+mediaCategory:
+  categoryID: "951922514844610640" # Set category ID where the ticket will be moved when selecting the Media Support type
+  rolesID: ["944634874483081347"] # Set roles ID that can view the ticket Media Support
+
+storeCategory:
+  categoryID: "951922572168159242" # Set category ID where the ticket will be moved when selecting the Store Support type
+  rolesID: ["951921543976452138"] # Set roles ID that can view the ticket Store Support

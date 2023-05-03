@@ -1,0 +1,23 @@
+{
+    "name": "ticket-bot",
+    "version": "1.0.0",
+    "description": "Basic ticket Bot made in discord.js v13 by Expectatives#1157 - Old Project",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon index.js",
+      "start": "node index.js"
+    },
+    "author": "Expectatives",
+    "license": "ISC",
+    "dependencies": {
+      "discord-fetch-all": "^3.0.2",
+      "discord.js": "^13.3.0",
+      "fs": "^0.0.1-security",
+      "sourcebin_js": "^0.0.3-ignore"
+    },
+    "devDependencies": {
+      "eslint": "^7.9.0"
+    }
+  }
+  
